@@ -1,5 +1,6 @@
 package Top_50_Array_Questions_GeekforGeeks;
 
+import java.util.Arrays;
 
 //Given an unsorted array A of size N that contains only non-negative integers, 
 //find a continuous sub-array which adds to a given number S.
@@ -42,34 +43,40 @@ public class Subarray_with_given_sum {
 			
 			if(i < length) {
 				temp =  temp + arr[i];
-			}
-			
+			}			
 		}
 	}
 	
-	static void second_sum(int length, int[] arr, int sum) {
+	static int[] second_sum(int length, int[] arr, int sum) {
 		int i=0, j=0;
 		while(sum!=0) {
 			sum = sum - arr[i];
-			while(sum < 0) {
+			if(sum < 0) {			
 				sum = sum + arr[j];
 				j++;
-			}						
-			i++;
+			}					
+			if(i<length) {
+				i++;
+			}
 		}
-		System.out.println(j+" "+i);
+		if(sum==0) {
+			return new int[] {i,j};
+		}else {
+			return new int[] {-1};	
+		}
 	}
 	
 	
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		int[] arr= {1,2,3,4,5,6,7,8,9,10}; 
-		int sum = 30;
+		int[] arr= {1,2,3,7,5}; 
+		int sum = 21;
 		
 		
 	//	subarray_Sum(arr.length, arr, sum); // O(N^2)		
-//		optimal_solution(arr.length, arr, sum); // O(N)
-		second_sum(arr.length, arr, sum); // O(N^2)
+	//		optimal_solution(arr.length, arr, sum); // O(N)
+		int[] crr = second_sum(arr.length, arr, sum); // O(N^2)
+		System.out.println(Arrays.toString(crr));
 
 	}
 
