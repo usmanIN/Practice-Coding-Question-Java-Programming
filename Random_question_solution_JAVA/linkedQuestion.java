@@ -1,4 +1,4 @@
-package Solution_random_prepbytes_question;
+package Random_question_solution_JAVA;
 
 public class linkedQuestion {
 	

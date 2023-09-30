@@ -1,4 +1,4 @@
-package Learning_Basic_DataStructures_Java;
+package Learning_Solving_Question_Java;
 
 public class countPathMaze {
 	

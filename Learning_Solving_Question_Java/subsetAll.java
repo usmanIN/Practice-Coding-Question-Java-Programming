@@ -1,4 +1,5 @@
-package Learning_Basic_DataStructures_Java;
+package Learning_Solving_Question_Java;
+
 import java.util.ArrayList;
 public class subsetAll {
 

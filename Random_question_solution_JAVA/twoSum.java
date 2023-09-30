@@ -1,4 +1,4 @@
-package Solution_random_prepbytes_question;
+package Random_question_solution_JAVA;
 
 import java.util.Arrays;
 import java.util.HashMap;
@@ -6,7 +6,7 @@ import java.util.Map;
 
 public class twoSum {
 
-	public static int[] twoSum(int[] nums, int target){
+	public static int[] twoSumArr(int[] nums, int target){
 		
 //		Arrays.sort(nums);
 //        int left = 0;
@@ -38,7 +38,7 @@ public class twoSum {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		int[] arr = {3,2,4};
-		System.out.println(Arrays.toString(twoSum(arr,6)));
+		System.out.println(Arrays.toString(twoSumArr(arr,6)));
 		
 	}
 

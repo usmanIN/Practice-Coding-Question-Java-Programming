@@ -2,7 +2,6 @@ package Top_50_Array_Questions_GeekforGeeks;
 
 //Problem: Given an array A of size N of integers. 
 // Your task is to find the minimum and maximum elements in the array. 
-import java.util.Arrays;
 
 public class Minimum_and_Maximum_element {
 	
