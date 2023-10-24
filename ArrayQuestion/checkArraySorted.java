@@ -1,4 +1,4 @@
-package Random_question_solution_JAVA;
+package ArrayQuestion;
 
 public class checkArraySorted {
 	public static boolean sorted(int[] arr) {
