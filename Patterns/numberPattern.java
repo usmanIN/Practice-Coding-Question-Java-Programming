@@ -2,7 +2,7 @@ package Patterns;
 
 public class numberPattern {
 
-	public static void main(String[] args) {
+	public static void main(String[] args) { 
 		// TODO Auto-generated method stub
 		int N = 3;
 		for(int i=0; i<2*N-1; i++)
