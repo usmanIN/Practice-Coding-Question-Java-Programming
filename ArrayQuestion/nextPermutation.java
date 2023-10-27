@@ -50,7 +50,7 @@ public class nextPermutation {
 		// 2. find the element with minimum difference and element > break point
 		// 	   a- swap the element
 		// 3. sorted the right elements from break point swap
-		int n = arr.length-1;
+		int n = arr.length;
 		int break_point = -1;
 		
 		for(int i=n-2; i>=0; i--)
@@ -71,7 +71,7 @@ public class nextPermutation {
 				}
 			}
 		}
-		reverse(arr,break_point+1,n);
+		reverse(arr,break_point+1,n-1);
 		System.out.println(Arrays.toString(arr));
 		
 	}
@@ -79,7 +79,7 @@ public class nextPermutation {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		
-		ArrayList<ArrayList<Integer>> list = new ArrayList<>();		
+//		ArrayList<ArrayList<Integer>> list = new ArrayList<>();		
 		int[] arr = {2,1,5,4,3,0,0};		
 		nextPermutationOptimal(arr);		
 		//getPermutation(arr,0,list);		
