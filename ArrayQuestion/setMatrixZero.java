@@ -49,7 +49,7 @@ public class setMatrixZero {
 			{
 				if(matrix[i][j] == 0) {
 					rows[i] = 1;
-					cols[j] = 1;
+					cols[j] = 1; 
 				}
 			}
 		}
