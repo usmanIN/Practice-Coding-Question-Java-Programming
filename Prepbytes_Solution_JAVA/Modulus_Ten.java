@@ -10,10 +10,9 @@ package Prepbytes_Solution_JAVA;
 	    //write your code here
 	    Scanner scan = new Scanner(System.in);
 			int num = scan.nextInt();
-			
-			num = num%10;
-			
+			num = num%10;			
 			System.out.println(num);
+		    scan.close();
 			
 	  }
 	}

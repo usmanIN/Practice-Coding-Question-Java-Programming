@@ -1,6 +1,6 @@
 package Random_question_solution_JAVA;
 
-import java.util.Arrays;
+//import java.util.Arrays;
 
 public class reverseString {
 
@@ -14,7 +14,7 @@ public class reverseString {
 		}
 		System.out.println(result);
 	}
-	public static void reverseString(String text) {
+	public static void reverse_String(String text) {
 		
 //		char[] strArr= text.toCharArray();		
 //		
@@ -43,7 +43,7 @@ public class reverseString {
 	
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		reverseString("usmanj");
+		reverse_String("usmanj");
 	}
 
 }

@@ -2,9 +2,9 @@ package Learning_Basic_DataStructures_Java;
 
 public class LinkedList {
 	
-	static Node head;
+	Node head;
 	
-	static class Node{
+	class Node{
 		int data;
 		Node next;
 		
@@ -13,7 +13,7 @@ public class LinkedList {
 			this.next = null;
 		}
 	}
-	public static void addFirst(int d) {
+	public void addFirst(int d) {
 		Node node = new Node(d);
 		if(head == null) {
 			head = node;
@@ -23,7 +23,7 @@ public class LinkedList {
 		head = node;
 		
 	}
-	public static void addLast(int d) {
+	public void addLast(int d) {
 		Node node = new Node(d);
 		if(head == null) {
 			head = node;
@@ -38,7 +38,7 @@ public class LinkedList {
 		
 	}
 	
-	public static void removeLast() {
+	public void removeLast() {
 		if(head == null) {
 			return;
 		}
@@ -49,7 +49,7 @@ public class LinkedList {
 		currNode.next = null;
 	}
 	
-	public static void removeFirst() {
+	public void removeFirst() {
 		if(head == null) {
 			return;
 		}
@@ -57,7 +57,7 @@ public class LinkedList {
 		head = currNode.next;		
 	}
 	
-	public static int getSize() {
+	public  int getSize() {
 			int size = 0;
 			if(head == null) {
 				return 0;
@@ -70,7 +70,7 @@ public class LinkedList {
 			}
 			return size;
 	}
-	public static void reverse() {
+	public void reverse() {
 		if(head == null) {
 			return;
 		}
@@ -87,7 +87,7 @@ public class LinkedList {
 		head = prev;
 	}
 	
-	public static void getMid() {
+	public void getMid() {
 		if(head == null) {
 			return;
 		}
@@ -103,7 +103,7 @@ public class LinkedList {
 		System.out.print(temp.data);
 	}
 	
-	public static void  printNode() {
+	public void  printNode() {
 		
 		if(head == null) {
 			return;

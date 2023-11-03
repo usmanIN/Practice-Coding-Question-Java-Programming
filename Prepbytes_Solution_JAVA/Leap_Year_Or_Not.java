@@ -38,5 +38,6 @@ public class Leap_Year_Or_Not {
       
       test_case--;
     }
+    scan.close();
   }
 }

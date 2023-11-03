@@ -1,6 +1,6 @@
 package Prepbytes_Solution_JAVA;
 import java.util.*;
-import java.io.*;
+
 
 public class first_digit_of_Integer {
 
@@ -17,6 +17,7 @@ public class first_digit_of_Integer {
 			System.out.println(num);
 			test_case--;
 		}
+		scan.close();
 		
 
 	}

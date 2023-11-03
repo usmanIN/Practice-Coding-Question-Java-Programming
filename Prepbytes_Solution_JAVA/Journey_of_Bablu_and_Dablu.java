@@ -34,5 +34,6 @@ public class Journey_of_Bablu_and_Dablu {
 		     
 		     test_case--;
 		    }
+		    scan.close();
 		  }
 }

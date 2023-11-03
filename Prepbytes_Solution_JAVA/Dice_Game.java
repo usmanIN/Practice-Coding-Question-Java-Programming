@@ -23,6 +23,7 @@ public class Dice_Game {
 	        }
 	      test_case--;
 	    }
+	    scan.close();
 	    
 	    if(pragya>tina){
 	      System.out.println("Pragya");

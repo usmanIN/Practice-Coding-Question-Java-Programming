@@ -21,5 +21,6 @@ public class Second_Smallest {
 		    if(z>x && z<y){
 		        System.out.println(z);
 		    }
+		    scan.close();
 		  }
 }

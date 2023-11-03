@@ -96,6 +96,7 @@ public class floorSearch {
       
       test_case--;
     }
+    scan.close();
     
     
   }

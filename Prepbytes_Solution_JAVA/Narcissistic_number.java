@@ -32,6 +32,7 @@ public class Narcissistic_number {
       System.out.println((temp==num)?"Yes":"No");
       test_case--;
     }
+    scan.close();
     
   }
 }

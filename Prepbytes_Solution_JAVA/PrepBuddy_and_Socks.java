@@ -18,6 +18,7 @@ public class PrepBuddy_and_Socks {
 	      
 	      test_case--;
 	    }
+	    scan.close();
 	    
 	  }
 }

@@ -12,6 +12,7 @@ public class Sum_of_digits {
 		        sum+= num%10;
 		        num = num/10;
 		      }
+		      scan.close();
 		          
 		      System.out.println(sum);
 		  }

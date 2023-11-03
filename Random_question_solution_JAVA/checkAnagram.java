@@ -2,7 +2,7 @@ package Random_question_solution_JAVA;
 import java.util.Arrays;
 public class checkAnagram {
 	   
-	  public static boolean checkAnagram(String str1, String str2){
+	  public static boolean check_Anagram(String str1, String str2){
 	      if(str1.length() != str2.length()) return false;
 	      char strArr1[] = str1.toCharArray();
 	      char strArr2[] = str2.toCharArray();
@@ -19,7 +19,7 @@ public class checkAnagram {
 	  }
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		  boolean status = checkAnagram("silent","listen");
+		  boolean status = check_Anagram("silent","listen");
 	        if(status){
 	            System.out.println("Anangram");
 	        }else{

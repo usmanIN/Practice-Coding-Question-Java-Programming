@@ -1,7 +1,7 @@
 package Prepbytes_Solution_JAVA;
 
 import java.util.*;
-import java.io.*;
+
 
 
 public class Even_fibonacci {
@@ -79,6 +79,7 @@ public class Even_fibonacci {
         
         test_case--;
       }
+	    scan.close();
         
     }
   
