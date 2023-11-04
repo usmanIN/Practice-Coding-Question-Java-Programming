@@ -22,14 +22,28 @@ public class powerOfValue {
 	}
 	public static double pow(double x, int n) {
 		if(n < 0)
-			return f(1/x, n);
-		return f(x,n);
+			return powerBinary(1/x, n);
+		return powerBinary(x,n);
+	}
+	public static double powerBinary(double x, int n)
+	{
+		double ans = 1;
+		
+		while(n!=0)
+		{
+			if((n&1)!=0) {
+				ans = ans * x;
+			}
+			x = x * x;
+			n = n/2; // n>>1;
+		}
+		return ans;
 	}
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub 
 		
-		double result = pow(5,-2);
+		double result = pow(5,2);
 		System.out.print(result);	
 	}
 
