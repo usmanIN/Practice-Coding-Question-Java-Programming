@@ -39,12 +39,43 @@ public class powerOfValue {
 		}
 		return ans;
 	}
+	public static double fourthSol(double x, int n)
+	{
+		if(n<0)  return 0;
+		if(n==0) return 1;
+		if(n%2==0) return fourthSol(x,n/2)*fourthSol(x,n/2);
+		return fourthSol(x,n-1)*x;
+	}
+	public static double fifthSol(double x, int n)
+	{
+		double ans = 1;
+		while(n>0)
+		{
+			if(n%2!=0) ans = ans*x;
+			x = x * x;
+			n= n/2;
+		}		
+		return ans;
+	}
+	public static double toHandleLargeNumber(double x, int n, int m)
+	{
+		double ans = 1;
+		while(n>0)
+		{
+			if((n&1)!= 0) ans = (ans*x)%m;
+			x = (x * x)%m;
+			n = n >> 1;
+		}
+		return ans;
+	}
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub 
 		
-		double result = pow(5,2);
-		System.out.print(result);	
+		double result = fifthSol(5,64);
+		System.out.println(result);
+		result = toHandleLargeNumber(5,654,10);
+		System.out.println(result);
 	}
 
 }
